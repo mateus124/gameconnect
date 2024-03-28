@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --input-back: #202024;
+    --text: #FFF;
+    --emphasis: #29D44E;
+    --stroke: #343436;
+    --place: #C4C4CC;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #131313 0%, #0e0e0f 50%, #09090a 100%);
+    color: var(--text);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.buttons > ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.buttons > ul > li {
+    cursor: pointer;
+}
+
+.buttons > ul > li.disable {
+    color: #434447;
+}
+
+.buttons > ul > li > span.active {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    height: 5px;
+    background: linear-gradient(95deg, rgba(3,147,165,1) 0%, rgba(41,212,78,1) 50%, rgba(8,122,136,1) 100%);
+}
+
+.user {
+    display: flex;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.user-name {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.user-status > i {
+    color: var(--emphasis);
+}
+
+.user-icon{
+    width: 50px;
+}
+
+.user-icon > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Form */
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+h2.title {
+    margin-bottom: 3vh;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details {
+    margin-bottom: 6vh;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.input-box > input, .input-box > select, .input-box option {
+    background-color: var(--input-back);
+    padding: 10px 5px;
+    border: 1px solid var(--stroke);
+    width: 35vw;
+    border-radius: 5px;
+    color: var(--place);
+}
+
+.input-box > input::placeholder {
+    color: var(--place);
+    padding-left: 5px;
+}
+
+.submit {
+    text-align: end;
+}
+
+.submit > input {
+    background-color: var(--emphasis);
+    color: #131313;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/*Scroll*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--emphasis);
+    border-radius: 50px;
+    border: 2px solid #131313;
+}

@@ -22,10 +22,6 @@ body {
 
 /* Format */
 
-main > .active {
-    display: block;
-}
-
 main > .disable {
     display: none;
 }
@@ -169,6 +165,7 @@ h2.title {
     border-radius: 10px;
     cursor: pointer;
     padding: 15px;
+    transition: .3s;
 }
 
 .card > p.name {
@@ -183,6 +180,12 @@ h2.title {
 
 .card > p.plataform {
     margin-bottom: 10px;
+}
+
+.card:hover {
+    height: 300px;
+    width: 230px;
+    transition: .3s;
 }
 
 /*Scroll*/
